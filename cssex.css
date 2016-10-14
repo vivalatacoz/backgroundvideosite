@@ -2,8 +2,8 @@
   background-color: #000fff;
 }
 */
-html,
-
+/*html,
+*/
 body {
   height: 100%;
   font-family: "Oxygen", sans-serif;
@@ -22,6 +22,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(final_loops/colors.mp4) no-repeat;
+    background: url(loops/colors.mp4) no-repeat;
     background-size: cover;
+    transition: 1s opacity;
 }
