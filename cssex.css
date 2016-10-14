@@ -27,7 +27,7 @@ video#bgvid {
     transition: 1s opacity;
 }
 
-.content{
+.content {
   position: relative;
   z-index: 2
   text-align: center;
@@ -63,4 +63,12 @@ a {
 a:hover {
   background-color: #000fff;
   text-decoration: none;
+}
+
+.about {
+  background-color: rgba(255,255,255,0.5);
+  width: 100%;
+  max-width: 800px;
+  margin-top: 50px;
+  padding: 20px 40px;
 }
