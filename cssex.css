@@ -4,6 +4,9 @@
 */
 /*html,
 */
+
+/*////BODY////*/
+
 body {
   height: 100%;
   font-family: "Oxygen", sans-serif;
@@ -26,6 +29,9 @@ video#bgvid {
     background-size: cover;
     transition: 1s opacity;
 }
+
+
+/*////CONTENT////*/
 
 .content {
   position: relative;
@@ -50,20 +56,39 @@ video#bgvid {
   color: white;
   font-size: 1em;
   margin-bottom: 24px;
-
 }
 
-a {
+
+/*////LINKS////*/
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  transition: background 0.2s linear;
+}
+
+nav a:hover {
+  background-color: #2C1DBB;
+  text-decoration: none;
+}
+
+#name a {
   text-decoration: none;
   color: white;
   padding: 1em;
   transition: background 0.5s linear;
 }
 
-a:hover {
-  background-color: #000fff;
+.about a {
   text-decoration: none;
+  color: white;
+  transition: background 0.5s linear;
 }
+
+
+
+/*////ABOUT////*/
 
 .about {
   background-color: rgba(255,255,255,0.5);
