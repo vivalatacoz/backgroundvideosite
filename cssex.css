@@ -80,7 +80,7 @@ nav a:hover {
   transition: background 0.5s linear;
 }
 
-.about a {
+.box a {
   text-decoration: none;
   color: white;
   transition: background 0.5s linear;
@@ -88,12 +88,84 @@ nav a:hover {
 
 
 
-/*////ABOUT////*/
+/*////box////*/
 
-.about {
+.box {
   background-color: rgba(255,255,255,0.5);
   width: 100%;
   max-width: 800px;
   margin-top: 50px;
   padding: 20px 40px;
+}
+
+
+/*//// MUSIC ////*/
+
+.musicbox h2 {
+  text-align: center;
+  padding: 80px 100px;
+  font-size: 2em;
+}
+.musicImg {
+  background-size: 200px 500px;
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#freind {
+  background-image: url(photos/freind.jpg);
+}
+
+#soundcloud {
+  background-image: url(photos/soundcloud.jpg)
+}
+
+#solo {
+  background-image: url(photos/hipriestess.jpg)
+}
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+  /** An element that fades in and slides from the right */
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
 }
