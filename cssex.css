@@ -25,7 +25,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(loops/colors.mp4) no-repeat;
+    background: url('loops/colors.mp4') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
@@ -98,8 +98,12 @@ nav a:hover {
   padding: 20px 40px;
 }
 
+footer {
+  font-size: .5em;
+}
 
-/*//// MUSIC ////*/
+
+/*//// PHOTOLINKS ////*/
 
 .musicbox h2 {
   text-align: center;
@@ -127,6 +131,13 @@ nav a:hover {
   background-image: url(photos/hipriestess.jpg)
 }
 
+#flickr {
+  background-image: url(photos/sand.jpg)
+}
+
+#blog {
+  background-image: url(photos/blog.jpg)
+}
 /*
  * Keyframes
  */
@@ -150,7 +161,6 @@ nav a:hover {
 
 /*
  * CSS Page Transitions
- * Don't forget to add vendor prefixes!
  */
 .m-scene {
   /** Basic styles for an animated element */
